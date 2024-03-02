@@ -1,0 +1,86 @@
+site_name: Emuleo documentation
+site_description: docs of a toy web framework made by me for learning purpose.
+repo_url: https://github.com/raj23689/Emuleo
+site_author: raj23689
+copyright: Copyright raj23689 ( 2024 - present )
+site_url: 
+
+extra:
+  social:
+    - icon: material/github
+      url: https://github.com/raj23689/Emuleo
+  version: 1.0.0-alpha2
+
+theme:
+  name: "material"
+  logo: 
+  favicon: 
+
+  features:
+    - navigation.tracking
+    - navigation.instant
+    - navigation.tabs
+    - content.code.annotate
+    - navigation.instant
+    - toc.follow
+    - content.code.copy
+    - navigation.path
+
+  # palette:
+  #   - scheme: light
+  #     toggle:
+  #       icon: material/weather-sunny
+  #       name: Light Mode
+  #   - scheme: slate
+  #     toggle:
+  #       icon: material/weather-night
+  #       name: Dark Mode
+  palette:
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb
+      name: Switch to dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    primary: teal
+    accent: amber
+    toggle:
+      icon: material/lightbulb-outline
+      name: Switch to light mode
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: numpy
+            merge_init_into_class: false
+            inherited_members: true
+          import:
+            - https://docs.python.org/3.11/objects.inv
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Api Reference:
+      - App: api_reference/app.md
+      - Http:
+          - SSR: api_reference/http/SSR.md
+          - SSG: api_reference/http/SSG.md
+  - Guides:
+      - Basic: guides/basic.md
