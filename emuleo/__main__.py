@@ -16,7 +16,7 @@ click.rich_click.STYLE_ERRORS_SUGGESTION = "magenta italic"
 click.rich_click.ERRORS_SUGGESTION = (
     "Try running the '--help' flag for more information."
 )
-click.rich_click.ERRORS_EPILOGUE = "To find out more, visit [link=https://navithecoderboi.github.io/vivid/]https://navithecoderboi.github.io/vivid/[/link]"
+click.rich_click.ERRORS_EPILOGUE = "To find out more, visit [link=https://raj23689.github.io/Emuleo/]https://raj23689.github.io/Emuleo/[/link]"
 
 
 def options_selector_using(options: list[str], prompt: str, console: Console) -> str:
