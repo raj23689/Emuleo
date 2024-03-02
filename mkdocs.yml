@@ -3,7 +3,7 @@ site_description: docs of a toy web framework made by me for learning purpose.
 repo_url: https://github.com/raj23689/Emuleo
 site_author: raj23689
 copyright: Copyright raj23689 ( 2024 - present )
-site_url: https://github.com/raj23689/Emuleo
+site_url: https://raj23689.github.io/Emuleo/
 
 extra:
   social:
