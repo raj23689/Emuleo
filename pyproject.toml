@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "emuleo"
+version = "1.0.0-alpha1"
+description = "A toy implementation of a web framework in python"
+authors = ["raj23689 <92665411+raj23689@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/raj23689/Emuleo"
+homepage = "https://github.com/raj23689/Emuleo"
+classifiers = [
+    "Development status :: 1 - Alpha"
+]
+
+packages = [
+    { include = "emuleo" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+rich = "^13.7.0"
+jinja2 = "^3.1.3"
+uvicorn = {version = "^0.27.1", extras = ["standard"]}
+rich-click = "^1.7.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+ruff = "^0.1.15"
+mkdocs = "^1.5.3"
+mkdocstrings = {extras = ["python"], version = "^0.24.0"}
+mkdocs-material = "^9.5.6"
+pygments = "^2.17.2"
+isort = "^5.13.2"
+pre-commit = "^3.6.0"
+mypy = "^1.8.0"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+src_paths = ["emuleo"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
