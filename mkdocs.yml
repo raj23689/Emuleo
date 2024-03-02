@@ -13,8 +13,8 @@ extra:
 
 theme:
   name: "material"
-  logo: 
-  favicon: 
+  logo:
+  favicon:
 
   features:
     - search.suggest
@@ -41,7 +41,7 @@ theme:
   #     toggle:
   #       icon: material/weather-night
   #       name: Dark Mode
-  # Below is from fast Api 
+  # Below is from fast Api
   palette:
   - media: '(prefers-color-scheme: light)'
     scheme: default
