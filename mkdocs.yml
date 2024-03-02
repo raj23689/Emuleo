@@ -17,13 +17,19 @@ theme:
   favicon: 
 
   features:
+    - search.suggest
+    - search.highlight
+    - navigation.indexes
     - navigation.tracking
     - navigation.instant
     - navigation.tabs
+    - content.tabs.link
     - content.code.annotate
+    - content.tooltips
     - navigation.instant
     - toc.follow
     - content.code.copy
+    - content.code.select
     - navigation.path
 
   # palette:
@@ -35,18 +41,19 @@ theme:
   #     toggle:
   #       icon: material/weather-night
   #       name: Dark Mode
+  # Below is from fast Api 
   palette:
   - media: '(prefers-color-scheme: light)'
     scheme: default
     primary: teal
-    accent: amber
+    accent: lime
     toggle:
       icon: material/lightbulb
       name: Switch to dark mode
   - media: '(prefers-color-scheme: dark)'
     scheme: slate
     primary: teal
-    accent: amber
+    accent: lime
     toggle:
       icon: material/lightbulb-outline
       name: Switch to light mode

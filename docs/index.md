@@ -41,9 +41,9 @@ python -m emuleo init ...
 You can load data on server using this server, make a **.py** file named same as template file in _/server_ directory.
 you need to export a load function which returns a response, below is given an example **load** function
 
-for example **index.py**
+for example **`index.py`**
 
-```python
+```python title="index.py" linenums="1"
 from emuleo.app import Response
 
 async def load():
@@ -55,9 +55,9 @@ async def load():
 
 ### Example template
 
-Here is an example template **index.html**
+Here is an example template **`index.html`**
 
-```html
+```html title="index.html" linenums="1"
 <!DOCTYPE html>
 <html lang="en">
 	<head>
