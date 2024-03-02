@@ -32,8 +32,8 @@ To create a **Emuleo** project you need to open a command line and type below co
 python -m emuleo init ...
 ```
 
-!!! note "Note"
-	Don't forget to replace **...** with your project name
+> [!NOTE]
+> Don't forget to replace **...** with your project name
 
 ## walkthrough
 
@@ -49,8 +49,9 @@ async def load():
     return Response(200,[], { "name": "John" })
 ```
 
-!!! note "Note"
-    You have to use jinja3.x syntax for templating, Here's [jinja docs](https://jinja.palletsprojects.com/en/3.0.x/templates/) for more information.
+> [!NOTE]
+> You have to use jinja3.x syntax for templating, Here's [jinja docs](https://jinja.palletsprojects.com/en/3.0.x/templates/) for more information.
+
 
 ### Example template
 
